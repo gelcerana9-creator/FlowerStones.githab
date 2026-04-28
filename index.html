@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Flowers and Stones - 2D Платформер</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="game-container">
+    <canvas id="gameCanvas" width="1200" height="700"></canvas>
+
+
+    <div id="mainMenuScreen" class="screen" style="display: flex;">
+        <div class="menu-panel">
+            <h1>🍃 FLOWERS & STONES 🌸</h1>
+            <div class="input-group">
+                <input type="text" id="playerNameInput" maxlength="16" placeholder="ENTER YOUR NAME" autocomplete="off">
+            </div>
+            <button id="startGameBtn">✨ START GAME ✨</button>
+            <div class="instruction">
+                📜 HOW TO PLAY:<br>
+                🎮 <strong>SPACE</strong> — прыжок, чтобы перепрыгивать камни.<br>
+                🌼 Собирай цветы — +1 очко.<br>
+                🪨 Столкновение с камнем = конец игры.<br>
+                ⏱️ У тебя 45 секунд. Набери максимум цветов!
+            </div>
+            <button id="soundToggleBtn" class="Toggle-Btn">🔊</button>
+        </div>
+    </div>
+
+    <div id="gameOverScreen" class="screen" style="display: none;">
+        <div class="menu-panel">
+            <h2>💀 GAME OVER 💀</h2>
+            <div class="scoreboard" id="leaderboardDiv">
+            </div>
+            <hr>
+            <button id="restartBtn">🔄 ИГРАТЬ СНОВА</button>
+            <button id="menuBtn">🏠 ГЛАВНОЕ МЕНЮ</button>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
